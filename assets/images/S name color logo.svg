@@ -1,0 +1,15 @@
+<svg width="185" height="194" viewBox="0 0 185 194" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M36 0.999939L1 62L36 110H92L61 62L91.5 0.999939H36Z" fill="#C5DAC4" fill-opacity="0.99"/>
+<path d="M36 0.999939L1 62L36 110H92L61 62L91.5 0.999939H36Z" fill="black" fill-opacity="0.2"/>
+<path d="M36 0.999939L1 62L36 110H92L61 62L91.5 0.999939H36Z" fill="#1A60A2"/>
+<path d="M127 62H184L147 0.999939H91.5L127 62Z" fill="#C5DAC4" fill-opacity="0.99"/>
+<path d="M127 62H184L147 0.999939H91.5L127 62Z" fill="black" fill-opacity="0.2"/>
+<path d="M127 62H184L147 0.999939H91.5L127 62Z" fill="#1A60A2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M92 81.9999H147L184 134L149.5 193.5H92L127 134L92 81.9999Z" fill="#C5DAC4" fill-opacity="0.99"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M92 81.9999H147L184 134L149.5 193.5H92L127 134L92 81.9999Z" fill="black" fill-opacity="0.2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M92 81.9999H147L184 134L149.5 193.5H92L127 134L92 81.9999Z" fill="#1A60A2"/>
+<path d="M1 134L36 193.5H92L55.5 134H1Z" fill="#C5DAC4" fill-opacity="0.99"/>
+<path d="M1 134L36 193.5H92L55.5 134H1Z" fill="black" fill-opacity="0.2"/>
+<path d="M1 134L36 193.5H92L55.5 134H1Z" fill="#1A60A2"/>
+<path d="M92 193.5H149.5L184 134L147 81.9999H92L127 134L92 193.5ZM92 193.5H36L1 134H55.5L92 193.5ZM61 62L92 110H36L1 62L36 0.999939H91.5M61 62L77.7705 29M61 62L91.5 0.999939M91.5 0.999939H147L184 62H127L91.5 0.999939Z" stroke="black"/>
+</svg>
