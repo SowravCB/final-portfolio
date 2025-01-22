@@ -1,4 +1,4 @@
-/* #wrapper-canvas canvas {
+#wrapper-canvas canvas {
   max-width: 100%;
 }
 
@@ -8,13 +8,13 @@ body {
   padding: 0;
   overflow-x: hidden;
   /* Prevent horizontal scrolling */
-/* } */
+}
 
-/* ul {
+ul {
   margin-top: 8rem;
 }
 
-.tooltip-container {
+/* .tooltip-container {
   border: 1px solid #fff;
   width: 518px;
   height: 237px;
@@ -24,7 +24,7 @@ body {
   align-items: center;
   padding: 0px 64px;
 
-}
+} */
 
 .tooltip {
   margin-left: -2px;
@@ -45,20 +45,4 @@ body {
 .tooltip-icon span {
   position: relative;
   z-index: 1;
-} */
-*/
-/* .mongodb .tooltip {
-  background-color: #47A248;
 }
-
-.express .tooltip {
-  background-color: #ffff;
-}
-
-.react .tooltip {
-  background-color: #61dafb;
-}
-
-.node .tooltip {
-  background-color: #8CC84B;
-} */
