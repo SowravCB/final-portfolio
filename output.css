@@ -663,10 +663,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.-mt-20 {
-  margin-top: -5rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -739,8 +735,16 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .mt-\[56px\] {
@@ -749,18 +753,6 @@ video {
 
 .mt-\[80px\] {
   margin-top: 80px;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mt-14 {
-  margin-top: 3.5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .block {
@@ -803,6 +795,10 @@ video {
   width: 1rem;
 }
 
+.w-5 {
+  width: 1.25rem;
+}
+
 .w-7 {
   width: 1.75rem;
 }
@@ -830,10 +826,6 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-5 {
-  width: 1.25rem;
 }
 
 .max-w-\[400px\] {
@@ -1102,6 +1094,10 @@ video {
   padding-top: 5rem !important;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1120,10 +1116,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
 }
 
 .text-left {
@@ -1234,6 +1226,11 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+}
+
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
@@ -1247,16 +1244,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
-}
-
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
 .shadow-\[0_0px_60px_rgba\(59\2c 130\2c 246\2c 0\.4\)\] {
@@ -1440,6 +1427,10 @@ video {
   top: -3.5rem;
 }
 
+.group:hover .group-hover\:-top-12 {
+  top: -3rem;
+}
+
 @media (min-width: 640px) {
   .sm\:absolute {
     position: absolute;
@@ -1525,20 +1516,20 @@ video {
     margin-right: 180px;
   }
 
-  .md\:mr-8 {
-    margin-right: 2rem;
-  }
-
-  .md\:mt-\[130px\] {
-    margin-top: 130px;
-  }
-
   .md\:-mt-20 {
     margin-top: -5rem;
   }
 
+  .md\:mr-8 {
+    margin-right: 2rem;
+  }
+
   .md\:mt-\[128px\] {
     margin-top: 128px;
+  }
+
+  .md\:mt-\[130px\] {
+    margin-top: 130px;
   }
 
   .md\:block {
