@@ -160,7 +160,7 @@
             viewBox="0 0 347 383"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            class="pointer-events-none absolute top-0 -translate-x-2/18 left-1/4 md:left-1/2 md:w-[347px] w-[200px] h-auto"
+            class="pointer-events-none absolute top-0 -translate-x-2/18 left-1/4 md:left-1/2 md:w-[347px] w-[200px] h-auto sm:mt-[50px]"
           >
             <path
               d="M216.5 115H147H145.5L294 261.5C294.5 268.167 292.5 286.2 280.5 305C268.5 323.8 245.5 330.167 235.5 331H52V234H0.109085V382.5H237.5C264.7 380.5 287.5 367.333 295.5 361C314.3 351 329.667 324.167 335 312C341.4 296 344.667 280 345.5 274C347.5 259.5 345.5 240 345.5 240L216.5 115Z"
@@ -195,19 +195,20 @@
               </linearGradient>
             </defs>
           </svg>
-          <div class="relative mt-[80px] md:mt-[130px]">
+          <div class="relative  md:mt-[130px] sm:mt-[55px]">
             <h1
-              class="pointer-events-none text-[30px] md:text-[60px] font-['sparton'] font-bold mr-12"
+              class="pointer-events-none text-[30px] md:text-[60px] font-['sparton'] font-bold mr-12 sm:mt-[40px]"
             >
               Sowrav Chandra Biswas
             </h1>
             <p
-              class="pointer-events-none font-['Merriweather,serif'] italic mt-2 mb-6"
+              class="pointer-events-none font-['Merriweather,serif'] italic sm:mt-4 mt-2 mb-6"
             >
               MERN Stack Developer
             </p>
-            <button
-              class="pointer-events-auto bg-[#4595eb] py-3 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-105 ease-in-out duration-100 grpup"
+            <button 
+              id="openModal"
+              class="pointer-events-auto bg-[#4595eb] py-[10px] px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-105 ease-in-out duration-100 group "
             >
               About Me
               <svg
@@ -250,6 +251,126 @@
                 </g>
               </svg>
             </button>
+                <!-- Modal -->
+                <div 
+                  id="myModal"
+                  class=" fixed inset-0 flex items-center justify-self-center mx-4 my-8 justify-center hidden  pointer-events-none z-50 bg-[#191919] rounded-xl p-6   max-w-[1200px] h-[700px] w-[90%] translate-y-1/6 sm:-translate-y-2/10 "> 
+                  <!--  -->
+                  <div id="closeModal" class="flex absolute right-[20px] top-[20px] 
+                  ">
+                  <div class="flex  pointer-events-auto bg-[#27292d] rounded-full hover:scale-125 ease-in-out duration-100 group justify-center w-7 h-7 hover:rotate-90 transition-transform hover:duration-300 relative   drop-shadow-[rgba(0, 0, 0, 0.75) 0px 0px 5px]  ">
+                      <img src="./assets/icons/x.svg" alt="x icon" class=" w-4 h-4 mt-[6px]">
+                </div>
+                </div>
+                <!--  -->
+                  <div class="md:w-[50%] w-full !sm:w-[250px] sm:h-[600px] flex flex-col mx-6 md:mt-4">
+                    
+                    <h2 class=" font-bold text-3xl text-[#4595eb] sm:justify-center">
+                        ABOUT ME 
+                    </h2>
+                    <p class="mt-2 text-white text-wrap pointer-events-auto text-justify  text-sm md:text-base mb-2">I help business owners and busy web developers to design & develop creative websites that fits their vision and attracts the visitors to stay for ever. Technologies and tools that I use to create such awesome websites.</p>
+                    
+                    <ul class="flex flex-wrap gap-2 mt-2 pointer-events-auto">
+                      <li class="border rounded-[50px]  border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#javascript</li>
+                      <li class="border  rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#react.js</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#redux</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#node.js</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#express.js</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#mongoDB</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#mongoose</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#cloudinary</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#ejs</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#html</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#css</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#sass</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#bootstrap</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#tailwind</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#git</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#github</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#aws</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#terminal</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#adobeXD</li>
+                      <li class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base">#figma</li>
+                    </ul>
+                    
+                    <h2 class="flex text-xl md:text-3xl justify-center text-[#4595eb] font-bold mt-6 md:mb-4">MERN STACK</h2>
+                    <div class="h-auto lg:h-[200px] w-auto lg:w-[500px] ">
+                      <div class="md:border rounded-2xl sm:border-block">
+                        
+        
+                        <div class="top-skills-icons flex justify-between  md:mx-4 md:my-4">
+                          <div class="mongodb-icon  pointer-events-auto">
+                            <div class="flex group justify-center rounded-xl h-[25px] w-[90px] -ml-[10px] mb-5  pointer-events-auto  hover:opacity-100 opacity-0 cursor-context-menu">
+                              
+                              <span class="flex pointer-events-auto hover:ease-jump duration-700  group transition transform group-hover:opacity-1  group-hover:mt-0  group-hover:mb-2 bg-[#47a248] sm:absolute  px-2 py-1 text-sm sm:text-base mt-12 rounded-full w-max items-center gap-1 after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2 absolute text-white font-bold ">MongoDB</span>
+                              </div>
+                                <img src="assets/icons/mongodb.svg" alt="mongodb-icon" class="ml-2 pointer-events-all group bg-[#19191919]">
+                            
+                            <h2 class="text-[#47a248] ml-[20px] sm:text[20px] text-[30px] font-[800]  mt-[15px] group">M</h2>
+                          </div>
+        
+                          <div class="express-icon">
+                            <div class="flex group justify-center rounded-xl h-[25px] w-[90px] -ml-[10px] mb-5  pointer-events-auto opacity-0 hover:opacity-100">
+                              <span class=" flex pointer-events-auto group-hover:mb-2 ease-in-out duration-500  group transition-transform  group-hover:opacity-1  group-hover:mt-0   bg-[#fff] sm:absolute  px-4 py-1 text-sm sm:text-base mt-12 rounded-full w-max items-center gap-1 after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2 absolute text-black font-bold">Express.JS</span>
+                              </div>
+                              <img src="assets/icons/express.svg" alt="express-icon" class="ml-[14px] relative">
+                            <h2 style="margin-left: 25px; font-size: 30px; font-weight: 800; margin-top: 15px;">E</h2>
+                          </div>
+        
+                          <div class="react-icon">
+                            <div class="flex group justify-center rounded-xl h-[25px] w-[90px] -ml-[10px] mb-5  pointer-events-auto opacity-0 hover:opacity-100">
+                              <span class="flex pointer-events-[all] group-hover:mb-2 ease-in-out duration-500  group transition-transform  group-hover:opacity-1  group-hover:mt-0   bg-[#61dafb] sm:absolute  px-4 py-1 text-sm sm:text-base mt-12 rounded-full w-max items-center gap-1 after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2 absolute text-black font-bold">React.JS</span>
+                              </div>
+                              <img src="assets/icons/react.svg" alt="react-icon" class="ml-2">
+                            <h2 style="color: #61dafb; margin-left: 23px; font-size: 30px; font-weight: 800; margin-top: 15px;">R</h2>
+                          </div>
+        
+                          <div class="node-icon">
+                            <div class="flex group justify-center rounded-xl h-[25px] w-[90px] -ml-[10px] mb-5  pointer-events-auto opacity-0 hover:opacity-100">
+                              <span class=" flex pointer-events-auto group-hover:mb-2 ease-in-out duration-500  group transition-transform  group-hover:opacity-1  group-hover:mt-0   bg-[#8CC84B] sm:absolute  px-4 py-1 text-sm sm:text-base mt-12 rounded-full w-max items-center gap-1 after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2 absolute text-black font-bold">Node.JS</span>
+                              </div>
+                            
+        
+                            <img src="assets/icons/node.svg" alt="node-icon" class="ml-[13px]">
+                            <h2 style="color: #8cc84b; margin-left: 23px; font-size: 30px; font-weight: 800; margin-top: 15px;">N</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- image  -->
+                    <div class="flex hidden sm:block justify-center items-center ml-4">
+                      <img src="assets/images/coder.svg" alt="coder">
+                    </div>
+                    
+              </div>
+              
+              <!--  -->
+              
+              
+              <script>
+                // Select the modal and buttons
+                const openModal = document.getElementById('openModal');
+                const closeModal = document.getElementById('closeModal');
+                const modal = document.getElementById('myModal');
+                const body = document.body
+              
+                // Add event listener to open the modal
+                openModal.addEventListener('click', () => {
+                  modal.classList.remove('hidden');
+                  body.classList.add('overflow-hidden'); // Show the modal
+                });
+              
+                // Add event listener to close the modal
+                closeModal.addEventListener('click', () => {
+                  modal.classList.add('hidden');
+                  body.classList.remove('overflow-hidden'); // Hide the modal
+                });
+              
+                // Optional: Close modal when clicking outside the content
+                modal.addEventListener('click', closeModal);
+            
+              </script>
           </div>
         </div>
         <ul
@@ -336,7 +457,7 @@
         class="relative self-center after:contant-[''] after:absolute after:w-[2px] after:h-7 after:bg-[#444] after:left-1/2 after:translate-x-1/2 after:top-3/4"
       >
         <button
-          class="bg-[#4595eb] py-3 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-105 ease-in-out duration-100 grpup mb-20 ml-1"
+          class="bg-[#4595eb] py-[10px] px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-105 ease-in-out duration-100 group  mb-20 ml-1"
         >
           Latest Woeks
           <svg
@@ -444,47 +565,47 @@
 
           <ul class="flex flex-wrap gap-2 mt-2">
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px]text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #react.js
             </li>
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px]text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #express.js
             </li>
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px]text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #node.js
             </li>
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px]text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #swiper.js
             </li>
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px]text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #mongoDB
             </li>
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px]text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #mongoose
             </li>
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px]text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #css
             </li>
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px]text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #javascript
             </li>
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px]text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #figma
             </li>
@@ -509,47 +630,47 @@
 
           <ul class="flex flex-wrap gap-2 mt-2">
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #react.js
             </li>
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #express.js
             </li>
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #node.js
             </li>
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #swiper.js
             </li>
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #mongoDB
             </li>
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #mongoose
             </li>
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #css
             </li>
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #javascript
             </li>
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+              class="border rounded-[50px] border-[#414040] px-[10px] py-[5px] text-sm md:text-base"
             >
               #figma
             </li>
@@ -972,7 +1093,7 @@
         keyboard: true,
       });
     </script>
-    <script
+    <!-- <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
@@ -980,5 +1101,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
     <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
-  </body>
+  </body> -->
 </html>
