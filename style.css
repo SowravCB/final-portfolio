@@ -9,7 +9,3 @@ body {
   overflow-x: hidden;
   /* Prevent horizontal scrolling */
 }
-
-ul {
-  margin-top: 8rem;
-}

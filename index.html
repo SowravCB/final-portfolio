@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="font.css" />
+    
+
+
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -39,14 +42,19 @@
   </head>
 
   <body class="bg-[#111111] text-white font-['Nunito']">
-    <section class="flex flex-col justify-between h-screen">
+    <section 
+              class="  flex flex-col justify-between h-screen" id="main-section"
+              >
+              <div id="overlay" class="hidden h-[94px] w-full"></div>
+              
       <header
-        class="z-10 pointer-events-none flex items-center justify-between w-full mt-4 mx-4 max-w-screen-xl"
+        class="z-10 pointer-events-none flex items-center justify-between w-full mt-4 mx-4 max-w-screen" id="navbar"
       >
         <!-- /*** name logo ***/ -->
         <div
-          class="pointer-events-none mx-[0px] md:mx-[180px] drop-shadow-[0_0px_80px_rgba(59,130,246,0.8)]"
+          class="pointer-events-auto mx-[0px] md:mx-[170px] drop-shadow-[0_0px_80px_rgba(59,130,246,0.8)] md:mt-2"
         >
+        <a href="https://sowravcbiswas.netlify.app/" target="blank">
           <svg
             width="70"
             height="70"
@@ -63,8 +71,9 @@
               fill="white"
             />
           </svg>
+        </a>
         </div>
-        <div class="pointer-events-auto flex items-center gap-3 md:gap-7 mr-10">
+        <div class="pointer-events-auto flex items-center gap-9 md:gap-7 md:mr-[180px] mr-10">
           <!-- /*** sun icon ***/ -->
           <a href="sun.com">
             <svg
@@ -153,14 +162,14 @@
       <div class="absolute inset-0 hidden md:block" id="wrapper-canvas"></div>
       <!-- medil side-->
       <div class="pointer-events-none flex md:-mt-20 relative">
-        <div class="w-full px-4 max-w-screen-xl mx-auto mb-4">
+        <div class="w-full md:px-4 px-8 max-w-screen-xl mx-auto mb-4">
           <!--So name logo -->
           <svg
             width="347"
             viewBox="0 0 347 383"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            class="pointer-events-none absolute top-0 -translate-x-2/18 left-1/4 md:left-1/2 md:w-[347px] w-[200px] h-auto sm:mt-[50px]"
+            class="pointer-events-none absolute top-0 -translate-x-2/18 left-1/4 md:left-1/2 md:w-[347px] w-[200px] h-auto sm:mt-[30px] lg:mb-[80px]"
           >
             <path
               d="M216.5 115H147H145.5L294 261.5C294.5 268.167 292.5 286.2 280.5 305C268.5 323.8 245.5 330.167 235.5 331H52V234H0.109085V382.5H237.5C264.7 380.5 287.5 367.333 295.5 361C314.3 351 329.667 324.167 335 312C341.4 296 344.667 280 345.5 274C347.5 259.5 345.5 240 345.5 240L216.5 115Z"
@@ -195,20 +204,20 @@
               </linearGradient>
             </defs>
           </svg>
-          <div class="relative  md:mt-[130px] sm:mt-[55px]">
+          <div class="relative  md:mt-[190px] sm:mt-[55px]">
             <h1
-              class="pointer-events-none text-[30px] md:text-[60px] font-['sparton'] font-bold mr-12 sm:mt-[40px]"
+              class="pointer-events-none text-[27px] md:text-[60px] font-['sparton, sans-serif'] font-bold mr-12 sm:mt-[40px] mt-8 mb-4"
             >
               Sowrav Chandra Biswas
             </h1>
             <p
-              class="pointer-events-none font-['Merriweather,serif'] italic sm:mt-4 mt-2 mb-6"
+              class="pointer-events-none font-['Merriweather,serif'] italic sm:mt-4 mt-2 mb-5"
             >
               MERN Stack Developer
             </p>
             <button 
               id="openModal"
-              class="pointer-events-auto bg-[#4595eb] py-[10px] px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-105 ease-in-out duration-100 group "
+              class="pointer-events-auto bg-[#4595eb] py-[10px] px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-105 ease-in-out duration-100 group mt-2"
             >
               About Me
               <svg
@@ -258,7 +267,9 @@
                   <!--  -->
                   <div id="closeModal" class="flex absolute right-[20px] top-[20px] 
                   ">
-                  <div class="flex  pointer-events-auto bg-[#27292d] rounded-full hover:scale-125 ease-in-out duration-100 group justify-center w-7 h-7 hover:rotate-90 transition-transform hover:duration-300 relative   drop-shadow-[rgba(0, 0, 0, 0.75) 0px 0px 5px]  ">
+                  <div class="flex  pointer-events-auto bg-[#27292d] rounded-full hover:scale-125 ease-in-out duration-100 group justify-center w-7 h-7 hover:rotate-90 transition-transform hover:duration-300 relative   
+                  box-shadow-[0px 0px 95px 14px rgba(150, 150, 150, 1)]
+                    ">
                       <img src="./assets/icons/x.svg" alt="x icon" class=" w-4 h-4 mt-[6px]">
                 </div>
                 </div>
@@ -341,46 +352,18 @@
                 <!-- image  -->
                     <div class="flex hidden sm:block justify-center items-center ml-4">
                       <img src="assets/images/coder.svg" alt="coder">
-                    </div>
-                    
+                  </div>
               </div>
-              
-              <!--  -->
-              
-              
-              <script>
-                // Select the modal and buttons
-                const openModal = document.getElementById('openModal');
-                const closeModal = document.getElementById('closeModal');
-                const modal = document.getElementById('myModal');
-                const body = document.body
-              
-                // Add event listener to open the modal
-                openModal.addEventListener('click', () => {
-                  modal.classList.remove('hidden');
-                  body.classList.add('overflow-hidden'); // Show the modal
-                });
-              
-                // Add event listener to close the modal
-                closeModal.addEventListener('click', () => {
-                  modal.classList.add('hidden');
-                  body.classList.remove('overflow-hidden'); // Hide the modal
-                });
-              
-                // Optional: Close modal when clicking outside the content
-                modal.addEventListener('click', closeModal);
-            
-              </script>
           </div>
         </div>
-        <ul
-          class="pointer-events-auto mt-2 md:mt-[128px] ml-auto mr-4 md:mr-8 space-y-5 text-[#b0b2c3] absolute right-2 md:right-6"
+        <ul id="social-icons"
+          class="pointer-events-auto  lg:mt-[100px] sm:mt-5  ml-auto mr-4 md:mr-8 space-y-8 text-[#b0b2c3] absolute right-2 md:right-6 "
         >
           <!-- /*** Linkedin icon ***/ -->
           <li>
             <a href="https://linkedin.com/in/scbsowrav30" target="_blank">
               <svg
-                class="w-7 hover:text-white"
+                class="w-5 md:w-7 hover:text-white hover:scale-105"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -395,7 +378,7 @@
           <li>
             <a href="https://x.com/scbsowrav30" target="_blank">
               <svg
-                class="w-7 hover:text-white"
+                class="w-5 md:w-7 hover:text-white hover:scale-105"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >
@@ -410,7 +393,7 @@
           <li>
             <a href="https://www.instagram.com/sowrav_13/" target="_blank">
               <svg
-                class="w-7 hover:text-white"
+                class="w-5 md:w-7 hover:text-white hover:scale-105"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -423,9 +406,9 @@
           </li>
           <!-- /*** email icon ***/ -->
           <li>
-            <a href="mailto:scbsowrav30@gmail.com" target="_blank">
+            <a href="mailto:scbsowrav30@gmail.com hover:scale-105" target="_blank">
               <svg
-                class="w-7 hover:text-white"
+                class="w-5 md:w-7 hover:text-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >
@@ -440,7 +423,7 @@
           <li>
             <a href="https://github.com/SowravCB" target="_blank">
               <svg
-                class="w-7 hover:text-white"
+                class="w-5 md:w-7 hover:text-white hover:scale-105"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 496 512"
               >
@@ -454,10 +437,10 @@
         </ul>
       </div>
       <div
-        class="relative self-center after:contant-[''] after:absolute after:w-[2px] after:h-7 after:bg-[#444] after:left-1/2 after:translate-x-1/2 after:top-3/4"
+        class="relative self-center after:contant-[''] after:absolute after:w-[2px] after:h-7 after:bg-[#444] after:left-1/2 after:translate-x-1/2 after:top-3/4" id="down-arrow-line"
       >
         <button
-          class="bg-[#4595eb] py-[10px] px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-105 ease-in-out duration-100 group  mb-20 ml-1"
+          class="bg-[#4595eb] py-[10px] px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-105 ease-in-out duration-100 group  mb-20 ml-1" id="latest-works-link"
         >
           Latest Woeks
           <svg
@@ -474,7 +457,7 @@
             width="44"
             height="44"
             viewBox="0 0 100 100"
-            class="absolute rotate-90 left-1/2 -translate-x-1/2 top-12 group-hover:-right-13 ease-in-out duration-200"
+            class="absolute rotate-90 left-1/2 -translate-x-1/2 top-12 group-hover:-right-13 ease-in-out duration-200" id="down-arrow"
           >
             <g transform="translate(0,-952.36218)">
               <path
@@ -501,9 +484,10 @@
           </svg>
         </button>
       </div>
+      
     </section>
     <!-- *** Section 2 *** -->
-    <section class="max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16">
+    <section class="  max-w-screen-xl mx-auto px-4 relative pb-8 sm:pb-16" id="work-section">
       <h2
         class="text-4xl relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] border-b-2 border-[#1788ae]"
       >
@@ -522,7 +506,7 @@
           class="w-4 h-4 rounded-full border-[3px] border-[#fc815c] absolute left-1/2 -translate-x-1/2 bg-[#111] ml-[2px] z-10 hover:scale-110 ease-in-out duration-100 hidden sm:block"
         ></div>
         <a
-          href="#.com" target="_blank"
+          href="https://instagram.com/sowrav_13" target="_blank"
           class="flex w-full relative justify-center sm:justify-start"
         >
           <div class="relative group hover:scale-105 ease-in-out duration-200">
@@ -686,7 +670,7 @@
         ></div>
 
         <a
-          href="#.com" target="_blank"
+          href="x.com/scbsowrav30" target="_blank"
           class="order-1 sm:order-2 flex w-full relative justify-center sm:justify-start"
         >
           <div
@@ -745,7 +729,7 @@
               class="flex flex-col md:flex-row max-w-[800px] items-center rounded-lg px-8 py-6 shadow-[0_0px_60px_rgba(59,130,246,0.4)] cursor-grab"
             >
               <img
-                class="shrink-0 w-[100px] h-[100px] md:w-[180px] md:h-[180px] rounded-full drop-shadow-[0_0px_60px_rgba(59,130,246,0.4)]"
+                class="shrink-0 w-[100px] h-[100px] md:w-[180px] md:h-[180px] rounded-full drop-shadow-[0_0px_60px_rgba(59,130,246,0.4)] hover:scale-105 transition duration-300"
                 src="/assets/images/sowrav swiper .jpg"
                 alt="testimonial 3"
               />
@@ -778,7 +762,7 @@
               class="flex flex-col md:flex-row max-w-[800px] items-center rounded-lg px-8 py-6 shadow-[0_0px_60px_rgba(59,130,246,0.4)] cursor-grab"
             >
               <img
-                class="shrink-0 w-[100px] h-[100px] md:w-[180px] md:h-[180px] rounded-full drop-shadow-[0_0px_60px_rgba(59,130,246,0.4)]"
+                class="shrink-0 w-[100px] h-[100px] md:w-[180px] md:h-[180px] rounded-full drop-shadow-[0_0px_60px_rgba(59,130,246,0.4)] hover:scale-105 transition duration-300"
                 src="/assets/images/sowrav swiper .jpg"
                 alt="testimonial 3"
               />
@@ -811,15 +795,15 @@
               class="flex flex-col md:flex-row w-full md:max-w-[800px] items-center rounded-lg px-8 py-6 shadow-[0_0px_60px_rgba(59,130,246,0.4)] cursor-grab"
             >
               <img
-                class="shrink-0 w-[100px] h-[100px] md:w-[180px] md:h-[180px] rounded-full drop-shadow-[0_0px_60px_rgba(59,130,246,0.4)]"
+                class="shrink-0 w-[100px] h-[100px] md:w-[180px] md:h-[180px] rounded-full drop-shadow-[0_0px_60px_rgba(59,130,246,0.4)] hover:scale-105 transition duration-300"
                 src="/assets/images/sowrav swiper .jpg"
                 alt="testimonial 3"
               />
 
               <div
-                class="testimonial-text ml-6 text-left pt-8 md:pt-16 relative"
+                class="testimonial-text ml-6 text-left pt-8 md:pt-16 relative "
               >
-                <p class="text-sm md:text-base mb-3">
+                <p class="text-sm md:text-base mb-3 ">
                   “Anurag is a talented, committed individual who will leave no
                   stone unturned in his pursuit to provide with the best. His
                   attention to detail and in-depth experience in the of web
@@ -843,7 +827,7 @@
               class="flex flex-col md:flex-row w-full mx-4 md:max-w-[800px] items-center rounded-lg px-8 py-6 shadow-[0_0px_60px_rgba(59,130,246,0.4)] cursor-grab"
             >
               <img
-                class="shrink-0 w-[100px] h-[100px] md:w-[180px] md:h-[180px] rounded-full drop-shadow-[0_0px_60px_rgba(59,130,246,0.4)]"
+                class="shrink-0 w-[100px] h-[100px] md:w-[180px] md:h-[180px] rounded-full drop-shadow-[0_0px_60px_rgba(59,130,246,0.4)] hover:scale-105 transition duration-300"
                 src="/assets/images/sowrav swiper .jpg"
                 alt="testimonial 3"
               />
@@ -877,7 +861,7 @@
       </div>
     </section>
     <!-- *** Section 4 *** -->
-    <section class="max-w-screen-xl mx-auto px-4 pb-12">
+    <section class=" max-w-screen-xl mx-auto px-4 pb-12">
       <h2
         class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md"
       >
@@ -977,7 +961,7 @@
     </section>
 
     <!-- footer section -->
-    <footer class="flex flex-col items-center pb-10 mt-20">
+    <footer class="flex flex-col items-center pb-10 mt-20 ">
       <p class="text-xs text-gray-400 mb-4">Sowrav Chandra Biswas © 2025</p>
       <div class="black-logo my-4">
         <svg 
@@ -1005,7 +989,7 @@
         <li>
           <a href="https://linkedin.com/in/scbsowrav30" target="_blank">
             <svg
-              class="w-5 hover:text-white"
+              class="w-5 hover:text-white hover:scale-105"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
             >
@@ -1019,7 +1003,7 @@
         <li>
           <a href="https://x.com/scbsowrav30" target="_blank">
             <svg
-              class="w-5 hover:text-white"
+              class="w-5 hover:text-white hover:scale-105"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >
@@ -1033,7 +1017,7 @@
         <li>
           <a href="https://www.instagram.com/sowrav_13/" target="_blank">
             <svg
-              class="w-5 hover:text-white"
+              class="w-5 hover:text-white hover:scale-105"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
             >
@@ -1047,7 +1031,7 @@
         <li>
           <a href="mailto:scbsowrav30@gmail.com" target="_blank">
             <svg
-              class="w-5 hover:text-white"
+              class="w-5 hover:text-white hover:scale-105"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >
@@ -1061,7 +1045,7 @@
         <li>
           <a href="https://github.com/SowravCB" target="_blank">
             <svg
-              class="w-7 hover:text-white"
+              class="w-7 hover:text-white hover:scale-105"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
             >
@@ -1093,7 +1077,7 @@
         keyboard: true,
       });
     </script>
-    <!-- <script
+    <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
@@ -1101,5 +1085,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
     <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
-  </body> -->
+  <script src="script.js"></script>
+  </body>
 </html>
